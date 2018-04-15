@@ -5,4 +5,12 @@ class BankAccount
     @name = name 
     @balance = 1000 
     @status = "open"
+  end
+  
+  def deposit(amount)
+    @balance += amount
+  end
+  
+  def display_balance
+    "i have $#{@balance} in my account."
 end
